@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import rocket from "@assets/images/rocket.svg";
+import rocket from "@assets/svg/rocket.svg";
 import { TextInput, Button } from "@components/index";
 
 export default function Page() {

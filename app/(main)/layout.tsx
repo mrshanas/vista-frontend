@@ -22,7 +22,7 @@ export default function MainLayout({
     <main>
       <section className="w-full grid grid-cols-5">
         <div
-          className={`col-span-1 hidden md:flex flex-col gap-y-6 items-center my-10 ${
+          className={`col-span-1 md:flex flex-col gap-y-6 items-center my-10 ${
             isSidebarOpen
               ? "absolute bg-white w-[50vw] my-0 h-[100vh] top-0 z-20"
               : "hidden"
