@@ -1,27 +1,27 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import rocket from "../../../assets/images/rocket.svg";
-import { TextInput, Button } from "../../../components";
+import rocket from "@assets/images/rocket.svg";
+import { TextInput, Button } from "@components/index";
 
 export default function Page() {
   return (
     <main className="w-full max-h-[100vh]">
-      <section className="w-[90%] flex items-start justify-between mx-auto my-12 md:w-4/5">
-        <div className="">
-          <h1 className="text-6xl font-semibold">
+      <section className="default-container flex flex-col md:flex-row items-start justify-between my-12">
+        <div className="mx-auto">
+          <h1 className="text-3xl md:text-6xl font-semibold">
             Sign in to <br /> Vista
           </h1>
-          <p className="text-2xl my-3">
+          <p className="text-xl md:text-2xl my-3">
             If you don&apos;t have an account <br />
             you can <span className="text-primary"> register here</span>
           </p>
           <div className="">
-            <Image src={rocket} alt="Rocket" />
+            <Image src={rocket} alt="Rocket" className="max-w-full" />
           </div>
         </div>
-        <div className="flex-grow h-full my-6">
-          <form className="flex flex-col justify-end mx-auto gap-y-6 w-3/5">
+        <div className="flex-grow h-full my-6 w-full mx-auto">
+          <form className="flex flex-col justify-end mx-auto gap-y-6 w-4/5 md:w-3/5">
             <TextInput placeholder="Enter Email" inputType="email" />
             <TextInput placeholder="Password" inputType="password" />
 
