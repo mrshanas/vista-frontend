@@ -21,7 +21,7 @@ export default function Page() {
           </div>
         </div>
         <div className="flex-grow h-full my-6 w-full mx-auto">
-          <form className="flex flex-col justify-end mx-auto gap-y-6 w-4/5 md:w-3/5">
+          <form className="flex flex-col justify-end mx-auto gap-y-6 w-[95%] md:w-3/5">
             <TextInput placeholder="Enter Email" inputType="email" />
             <TextInput placeholder="Password" inputType="password" />
 
@@ -36,17 +36,19 @@ export default function Page() {
             </div>
           </form>
 
-          <Link href="/forgot-password">
-            <p className="text-primary w-3/5 mx-auto text-md text-right">
-              Forgot Password?
-            </p>
-          </Link>
+          <div className="w-[95%] mx-auto md:w-3/5">
+            <Link href="/forgot-password">
+              <p className="text-primary mx-auto mb-3 text-md text-right">
+                Forgot Password?
+              </p>
+            </Link>
 
-          <Link href="/forgot-password">
-            <p className="text-primary text-md text-right w-3/5 mx-auto">
-              Didn&apos;t receive confirmation instructions?
-            </p>
-          </Link>
+            <Link href="/forgot-password">
+              <p className="text-primary text-md text-right mx-auto">
+                Didn&apos;t receive confirmation instructions?
+              </p>
+            </Link>
+          </div>
         </div>
       </section>
     </main>
